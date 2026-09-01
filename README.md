@@ -128,6 +128,10 @@ Historical model statistics and artifact hashes are recorded in
 [`docs/provenance.md`](docs/provenance.md). The model and deck bytes are not
 released.
 
+## Ranking Chart
+
+![Historical competition ranking chart](Ranking%20Chart.png)
+
 ## Public Release / Reproducibility Status
 
 | Component | Status |
