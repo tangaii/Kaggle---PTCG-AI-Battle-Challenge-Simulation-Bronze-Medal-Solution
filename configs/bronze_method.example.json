@@ -1,0 +1,20 @@
+{
+  "name": "bronze-option-ranker-method",
+  "feature_count": 361,
+  "model_families": ["main", "c7", "mid", "low", "easy"],
+  "inference": {
+    "ranking": "sum of flattened tree leaf values",
+    "selection": "stable descending score, then original option index",
+    "history_window": 40,
+    "fallback": "first legal option(s)"
+  },
+  "training": {
+    "objective": "lambdarank",
+    "rounds": 900,
+    "seed": 0,
+    "learning_rate": 0.04,
+    "min_data_in_leaf": 100,
+    "rows_contract": "caller-supplied authorized NPZ with X, y, qid, family"
+  },
+  "notice": "This template contains no deck, card identifiers, competition data, runtime path, or trained model."
+}

@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "option-ranker-method"
+version = "1.0.0"
+description = "License-conscious public implementation of a grouped option-ranking method"
+requires-python = ">=3.10,<3.13"
+dependencies = [
+  "numpy==1.26.0",
+  "lightgbm==4.7.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]

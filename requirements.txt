@@ -1,0 +1,3 @@
+# Python 3.12 on Linux is the audited environment.
+numpy==1.26.0
+lightgbm==4.7.0
